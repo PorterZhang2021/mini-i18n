@@ -7,14 +7,35 @@
 
   <parent>
     <groupId>io.porterzhang.mini-projects</groupId>
-    <artifactId>mini-i18n</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>mini-i18n-parent</artifactId>
+    <version>${revision}</version>
+    <relativePath>../mini-i18n-parent/pom.xml</relativePath>
   </parent>
 
   <artifactId>mini-i18n-core</artifactId>
   <packaging>jar</packaging>
 
   <dependencies>
-    <!-- 按需补充 -->
+    <!-- Microsphere -->
+    <dependency>
+      <groupId>io.github.microsphere-projects</groupId>
+      <artifactId>microsphere-java-core</artifactId>
+    </dependency>
+
+    <!-- Java API Dependencies -->
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <optional>true</optional>
+    </dependency>
+
+    <!-- Servlet API -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+
   </dependencies>
 </project>
