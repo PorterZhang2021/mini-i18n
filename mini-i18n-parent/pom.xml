@@ -8,13 +8,66 @@
   <parent>
     <groupId>io.porterzhang.mini-projects</groupId>
     <artifactId>mini-i18n</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${revision}</version>
+    <relativePath>../pom.xml</relativePath>
   </parent>
 
+
   <artifactId>mini-i18n-parent</artifactId>
-  <packaging>jar</packaging>
+  <version>${revision}</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <microsphere-spring-cloud.version>0.0.1</microsphere-spring-cloud.version>
+    <apache.commons.io.version>2.4</apache.commons.io.version>
+    <apache.commons.collections.version>3.2.2</apache.commons.collections.version>
+
+    <jsr305.version>3.0.1</jsr305.version>
+    <javax.ws.rs.version>2.1</javax.ws.rs.version>
+    <fastjson.version>1.2.83_noneautotype</fastjson.version>
+
+    <jmh.version>1.36</jmh.version>
+    <antlr.version>4.13.1</antlr.version>
+  </properties>
+
 
   <dependencies>
-    <!-- 按需补充 -->
+
+    <!-- Microsphere Spring Cloud Dependencies -->
+    <dependency>
+      <groupId>io.github.microsphere-projects</groupId>
+      <artifactId>microsphere-spring-cloud-dependencies</artifactId>
+      <version>${microsphere-spring-cloud.version}</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+
+    <!-- Alibaba Fastjson Dependencies -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>${fastjson.version}</version>
+    </dependency>
+
+    <!-- JAX-RS API -->
+    <dependency>
+      <groupId>javax.ws.rs</groupId>
+      <artifactId>javax.ws.rs-api</artifactId>
+      <version>${javax.ws.rs.version}</version>
+    </dependency>
+
+    <!-- Testing -->
+    <dependency>
+      <groupId>org.openjdk.jmh</groupId>
+      <artifactId>jmh-core</artifactId>
+      <version>${jmh.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openjdk.jmh</groupId>
+      <artifactId>jmh-generator-annprocess</artifactId>
+      <version>${jmh.version}</version>
+    </dependency>
+
   </dependencies>
 </project>
