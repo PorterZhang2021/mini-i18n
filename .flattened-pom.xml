@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>io.github.microsphere-projects</groupId>
+    <artifactId>microsphere-build</artifactId>
+    <version>0.0.21</version>
+  </parent>
+  <groupId>io.porterzhang.mini-projects</groupId>
+  <artifactId>mini-i18n</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <modules>
+    <module>mini-i18n-parent</module>
+    <module>mini-i18n-dependencies</module>
+    <module>mini-i18n-core</module>
+    <module>mini-i18n-openfeign</module>
+    <module>mini-i18n-spring</module>
+    <module>mini-i18n-spring-boot</module>
+    <module>mini-i18n-spring-cloud</module>
+    <module>mini-i18n-spring-cloud-server</module>
+    <module>mini-i18n-study-note</module>
+  </modules>
+  <properties>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <revision>0.0.1-SNAPSHOT</revision>
+  </properties>
+</project>
