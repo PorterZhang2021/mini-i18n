@@ -55,6 +55,13 @@
         <version>${revision}</version>
       </dependency>
 
+      <dependency>
+        <groupId>io.porterzhang.mini-projects</groupId>
+        <artifactId>mini-i18n-study-note</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+      </dependency>
+
+
     </dependencies>
 
   </dependencyManagement>
