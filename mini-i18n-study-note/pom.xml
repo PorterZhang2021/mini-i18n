@@ -21,5 +21,13 @@
       <groupId>io.github.microsphere-projects</groupId>
       <artifactId>microsphere-java-core</artifactId>
     </dependency>
+
+    <!-- Mini I18n Core -->
+    <dependency>
+      <groupId>io.porterzhang.mini-projects</groupId>
+      <artifactId>mini-i18n-core</artifactId>
+      <version>${revision}</version>
+    </dependency>
+
   </dependencies>
 </project>
