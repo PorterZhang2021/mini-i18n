@@ -1,12 +1,18 @@
 package io.mini.i18n;
 
+import io.microsphere.text.FormatUtils;
 import io.microsphere.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Objects;
 
 public abstract class AbstractServiceMessageSource implements ServiceMessageSource {
 
@@ -148,5 +154,10 @@ public abstract class AbstractServiceMessageSource implements ServiceMessageSour
         }
 
         return derivedLocales;
+    }
+
+    protected String resolveMessage(String message, Object... args) {
+        // Using FormatUtils#format, future subclasses may re-implement formatting
+        return FormatUtils.format(message, args);
     }
 }

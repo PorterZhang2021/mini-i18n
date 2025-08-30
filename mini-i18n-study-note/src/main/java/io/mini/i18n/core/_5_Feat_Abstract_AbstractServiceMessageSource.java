@@ -60,6 +60,15 @@ import java.util.Locale;
  *         </li>
  *     </ul>
  * </p>
+ * <p>
+ *     🙋：问题
+ *     <ul>
+ *         <li>
+ *             {@link AbstractServiceMessageSource#init()}和{@link AbstractServiceMessageSource#destroy()}都没有进行
+ *             实现，这里是不是可以改成abstract的方法？ 这里我觉得可以改成abstract的，这样的话就会提醒子类必须要去实现这两个方法。
+ *         </li>
+ *     </ul>
+ * </p>
  */
 public class _5_Feat_Abstract_AbstractServiceMessageSource {
 }
