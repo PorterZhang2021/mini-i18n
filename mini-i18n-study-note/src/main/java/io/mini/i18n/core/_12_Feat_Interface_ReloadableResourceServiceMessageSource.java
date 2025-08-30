@@ -15,15 +15,13 @@ package io.mini.i18n.core;
  *     <ul>
  *         <li>
  *             {@link io.mini.i18n.ReloadableResourceServiceMessageSource#reload(String)}以及
- *             {@link io.mini.i18n.ReloadableResourceServiceMessageSource#reload(Iterable<String>)}
+ *             {@link io.mini.i18n.ReloadableResourceServiceMessageSource#reload(Iterable)} )}
  *             这两个方法主要是用来重新加载资源的, 这里同样是采用了单个资源重新加载和批量资源重新加载两种方式，方便不同场景下的使用。
- *             同样也是一个Composite替换一/多之分。
  *         </li>
  *         <li>
- *             {@link io.mini.i18n.ReloadableResourceServiceMessageSource#cnaReload}以及
- *             {@link io.mini.i18n.ReloadableResourceServiceMessageSource#cabReload(Iterable<String>)}
+ *             {@link io.mini.i18n.ReloadableResourceServiceMessageSource#canReload(String)}以及
+ *             {@link io.mini.i18n.ReloadableResourceServiceMessageSource#canReload(Iterable)} )}
  *             这两个方法主要是用来判断是否支持重新加载资源的, 这里同样是采用了单个资源重新加载和批量资源重新加载两种方式，方便不同场景下的使用。
- *             同样也是一个Composite替换一/多之分。
  *         </li>
  *     </ul>
  * </p>
