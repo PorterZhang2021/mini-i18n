@@ -3,6 +3,7 @@ package io.mini.i18n;
 import io.microsphere.text.FormatUtils;
 
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.URL;
 import java.util.Enumeration;
@@ -29,7 +30,7 @@ public class DefaultServiceMessageSource extends PropertiesResourceServiceMessag
         LinkedList<Reader> propertiesResources = new LinkedList<>();
         while (resources.hasMoreElements()) {
             URL url = resources.nextElement();
-            propertiesResources.add(new java.io.InputStreamReader(url.openStream(), getEncoding()));
+            propertiesResources.add(new InputStreamReader(url.openStream(), getEncoding()));
         }
         return propertiesResources;
     }
