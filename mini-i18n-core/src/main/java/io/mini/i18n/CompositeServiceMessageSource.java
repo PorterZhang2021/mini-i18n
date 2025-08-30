@@ -22,7 +22,7 @@ public class CompositeServiceMessageSource implements ReloadableResourceServiceM
     private List<? extends ServiceMessageSource> serviceMessageSources;
 
     public CompositeServiceMessageSource() {
-        this(Collections.emptyList());
+        this.serviceMessageSources = Collections.emptyList();
     }
 
     public CompositeServiceMessageSource(List<? extends ServiceMessageSource> serviceMessageSources) {
