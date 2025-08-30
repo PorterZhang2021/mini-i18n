@@ -17,6 +17,9 @@ package io.mini.i18n.core;
  * 这个类需要同Spring做相关的兼容，其主要是通过Spring的Resource来进行资源的加载，最终也是通过父类{@link io.mini.i18n.PropertiesResourceServiceMessageSource}来完成
  * 对Properties的加载。
  * </p>
+ * <p>
+ *     ⚠️注意：PropertySourcesServiceMessageSource是对于spring的实现，所以在Core这块儿并没有进行具体的实现。
+ * </p>
  */
 public class _9_FeatComment {
 }
