@@ -1,5 +1,7 @@
 package io.mini.i18n.core;
 
+import io.mini.i18n.PropertiesResourceServiceMessageSource;
+
 import java.util.Map;
 
 /**
