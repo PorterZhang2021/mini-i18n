@@ -15,6 +15,7 @@ import java.util.Locale;
 import java.util.Set;
 import java.util.function.Consumer;
 
+
 public class CompositeServiceMessageSource implements ReloadableResourceServiceMessageSource {
 
     private static final Logger logger = LoggerFactory.getLogger(CompositeServiceMessageSource.class);
@@ -29,6 +30,10 @@ public class CompositeServiceMessageSource implements ReloadableResourceServiceM
         setServiceMessageSources(serviceMessageSources);
     }
 
+    @Nonnull
+    public List<ServiceMessageSource> getServiceMessageSources() {
+        return Collections.unmodifiableList(serviceMessageSources);
+    }
 
     public void setServiceMessageSources(List<? extends ServiceMessageSource> serviceMessageSources) {
         List<? extends ServiceMessageSource> oldServiceMessageSources = this.serviceMessageSources;

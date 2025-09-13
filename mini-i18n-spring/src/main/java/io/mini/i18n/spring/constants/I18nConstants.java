@@ -2,6 +2,8 @@ package io.mini.i18n.spring.constants;
 
 import io.mini.i18n.ServiceMessageSource;
 
+import java.util.Locale;
+
 public interface I18nConstants {
 
     String PROPERTY_NAME_PREFIX = "microsphere.i18n.";
@@ -22,6 +24,16 @@ public interface I18nConstants {
      * @see ServiceMessageSource#getSource()
      */
     String SOURCES_PROPERTY_NAME = PROPERTY_NAME_PREFIX + "sources";
+
+    /**
+     * Default {@link Locale} property name
+     */
+    String DEFAULT_LOCALE_PROPERTY_NAME = PROPERTY_NAME_PREFIX + "default-locale";
+
+    /**
+     * Supported {@link Locale} list property names
+     */
+    String SUPPORTED_LOCALES_PROPERTY_NAME = PROPERTY_NAME_PREFIX + "supported-locales";
 
     /**
      * The Primary {@link ServiceMessageSource} Bean Bean
