@@ -7,14 +7,64 @@
 
   <parent>
     <groupId>io.porterzhang.mini-projects</groupId>
-    <artifactId>mini-i18n</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>mini-i18n-parent</artifactId>
+    <version>${revision}</version>
+    <relativePath>../mini-i18n-parent/pom.xml</relativePath>
   </parent>
 
   <artifactId>mini-i18n-openfeign</artifactId>
+  <version>${revision}</version>
   <packaging>jar</packaging>
 
+
   <dependencies>
-    <!-- 按需补充 -->
+
+    <!-- Mini i18n Core -->
+    <dependency>
+      <groupId>io.porterzhang.mini-projects</groupId>
+      <artifactId>mini-i18n-core</artifactId>
+      <version>${revision}</version>
+    </dependency>
+
+    <!-- Servlet API -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Spring -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <optional>true</optional>
+    </dependency>
+
+    <!-- slf4j API -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <optional>true</optional>
+    </dependency>
+
+    <!-- Feign -->
+    <dependency>
+      <groupId>io.github.openfeign</groupId>
+      <artifactId>feign-core</artifactId>
+      <optional>true</optional>
+    </dependency>
+
+    <!-- Testing -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 </project>

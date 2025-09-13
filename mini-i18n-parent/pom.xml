@@ -13,6 +13,7 @@
     </parent>
 
 
+    <groupId>io.porterzhang.mini-projects</groupId>
     <artifactId>mini-i18n-parent</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>

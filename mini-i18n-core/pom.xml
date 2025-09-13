@@ -3,46 +3,47 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>io.porterzhang.mini-projects</groupId>
-    <artifactId>mini-i18n-parent</artifactId>
-    <version>${revision}</version>
-    <relativePath>../mini-i18n-parent/pom.xml</relativePath>
-  </parent>
-
-  <artifactId>mini-i18n-core</artifactId>
-  <packaging>jar</packaging>
-
-  <dependencies>
-    <!-- Microsphere -->
-    <dependency>
-      <groupId>io.github.microsphere-projects</groupId>
-      <artifactId>microsphere-java-core</artifactId>
-    </dependency>
-
-    <!-- Java API Dependencies -->
-    <dependency>
-      <groupId>com.google.code.findbugs</groupId>
-      <artifactId>jsr305</artifactId>
-      <optional>true</optional>
-    </dependency>
-
-    <!-- Servlet API -->
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <scope>provided</scope>
-    </dependency>
-
-    <!-- slf4j API -->
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <optional>true</optional>
-    </dependency>
+    <parent>
+        <groupId>io.porterzhang.mini-projects</groupId>
+        <artifactId>mini-i18n-parent</artifactId>
+        <version>${revision}</version>
+        <relativePath>../mini-i18n-parent/pom.xml</relativePath>
+    </parent>
 
 
-  </dependencies>
+    <artifactId>mini-i18n-core</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- Microsphere -->
+        <dependency>
+            <groupId>io.github.microsphere-projects</groupId>
+            <artifactId>microsphere-java-core</artifactId>
+        </dependency>
+
+        <!-- Java API Dependencies -->
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- Servlet API -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- slf4j API -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+
+    </dependencies>
 </project>
